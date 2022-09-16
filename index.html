@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ClassificationFigures</title>
+        <style>
+            .TwoDclass{height: 600px; width: 1000px; }
+            .ThreeDclass{width: 1000px; height: 900px; }
+            .TwoDclass-para{font-size: 50px; }
+            .DecisionBoundary{width: 800px; height: 600px; }
+            
+            div{color: green; font-size: 15px; margin: 2px 2px; }
+            body {counter-reset: counter1; }
+            h2 {counter-reset: counter2;}
+            h2:before { counter-increment: counter1;
+                content: "Section " counter(counter1) ". "; }
+            h3:before {counter-increment: counter2;
+                content: counter(counter1) "." counter(counter2) " ";
+            }
+        </style>
+    </head>
+
+    <!-- <div include-html="header.html" id="header_file"></div> -->
+    <!-- <h2>I m Main</h2> -->
+    <div >
+        <section>
+            <!-- Lumbar -->
+            <section> 
+                <h2>CenterLine Data - Classification</h2>
+                    <h3> CenterLine of Low Risk : Model No. 125026 </h3>
+                    <ul> 
+                        <object class="ThreeDclass" type="text/html" data="Low_125026_CL.html" id="Low_125026_file"></object>
+                    </ul>
+                    <h3> CenterLine of Medium Risk : Model No. 77426  </h3>
+                    <ul> 
+                        <object class="ThreeDclass" type="text/html" data="Medium_77426_CL.html" id="Medium_77426_file"></object>
+                    </ul>
+                    <h3> CenterLine of High Risk : Model No. 33260  </h3>
+                    <ul> 
+                        <object class="ThreeDclass" type="text/html" data="High_33260_CL.html" id="High_33260_file"></object>
+                    </ul>
+            </section>
+            <!-- Thoracic -->
+            <section> 
+            </section>
+    </section>
+                 
+    </div>
+    <!--    -->
+    
+
+    
+    
+
+    
+
+    
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/include-html.min.js"></script>
+</html>
